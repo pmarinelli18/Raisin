@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtPrompt = new System.Windows.Forms.Label();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.searchFile = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.enter = new System.Windows.Forms.Button();
             this.youtubePrompt = new System.Windows.Forms.Label();
             this.youtubeURL = new System.Windows.Forms.TextBox();
             this.fileDirectory = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorMessage = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPrompt
@@ -69,15 +72,6 @@
             this.searchFile.Text = "Search For File";
             this.searchFile.UseVisualStyleBackColor = true;
             this.searchFile.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 308);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
-            this.label2.TabIndex = 3;
             // 
             // enter
             // 
@@ -116,16 +110,29 @@
             this.fileDirectory.Size = new System.Drawing.Size(0, 17);
             this.fileDirectory.TabIndex = 7;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorMessage
+            // 
+            this.errorMessage.AutoSize = true;
+            this.errorMessage.ForeColor = System.Drawing.Color.Red;
+            this.errorMessage.Location = new System.Drawing.Point(34, 320);
+            this.errorMessage.Name = "errorMessage";
+            this.errorMessage.Size = new System.Drawing.Size(0, 17);
+            this.errorMessage.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 397);
+            this.Controls.Add(this.errorMessage);
             this.Controls.Add(this.fileDirectory);
             this.Controls.Add(this.youtubeURL);
             this.Controls.Add(this.youtubePrompt);
             this.Controls.Add(this.enter);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.searchFile);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.txtPrompt);
@@ -133,6 +140,7 @@
             this.Name = "Form1";
             this.Text = "Check Your Facts";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,11 +151,12 @@
         private System.Windows.Forms.Label txtPrompt;
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button searchFile;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button enter;
         private System.Windows.Forms.Label youtubePrompt;
         private System.Windows.Forms.TextBox youtubeURL;
         private System.Windows.Forms.Label fileDirectory;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label errorMessage;
     }
 }
 
