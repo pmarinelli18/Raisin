@@ -11,14 +11,12 @@ using static Google.Cloud.Language.V1.AnnotateTextRequest.Types;
 namespace Raisin
 {
     class LangProc
-    {      
-        LanguageServiceClient langClient;
-
+    {                    
         public LangProc()
         {     
             
         }
-        public void AnalyzeSyntaxFromText(string info)
+        public AnnotateTextResponse AnalyzeSyntaxFromText(string info)
         {
             
             var client = new LanguageServiceClientBuilder();
@@ -32,24 +30,25 @@ namespace Raisin
                 Type = Document.Types.Type.PlainText
             },
             new Features() { ExtractSyntax = true });
-            WriteSentences(response.Sentences, response.Tokens);
+
+            return response;
         }
 
-        public void WriteSentences(IEnumerable<Sentence> sentences,
-        RepeatedField<Token> tokens)
-        {
-            Console.WriteLine("Sentences:");
-            foreach (var sentence in sentences)
-            {
-                Console.WriteLine($"\t{sentence.Text.BeginOffset}: {sentence.Text.Content}");
-            }
-            Console.WriteLine("Tokens:");
-            foreach (var token in tokens)
-            {
-                Console.WriteLine($"\t{token.PartOfSpeech.Tag} "
-                    + $"{token.Text.Content}");
-            }
-        }
+        //public void WriteSentences(IEnumerable<Sentence> sentences,
+        //RepeatedField<Token> tokens)
+        //{
+        //    Console.WriteLine("Sentences:");
+        //    foreach (var sentence in sentences)
+        //    {
+        //        Console.WriteLine($"\t{sentence.Text.BeginOffset}: {sentence.Text.Content}");
+        //    }
+        //    Console.WriteLine("Tokens:");
+        //    foreach (var token in tokens)
+        //    {
+        //        Console.WriteLine($"\t{token.PartOfSpeech.Tag} "
+        //            + $"{token.Text.Content}");
+        //    }
+        //}
     }     
 }
 
