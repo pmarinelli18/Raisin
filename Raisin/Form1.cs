@@ -88,17 +88,25 @@ namespace Raisin
         {
             //ResultsLogic r = new ResultsLogic(txtInput.Text);
             int count = 0;
+
+            bool youtubeBool = false;
+            bool fileBool = false;
+            bool txtBool = false;
+
         if (youtubeURL.Text != "")
             {
                 count++;
+                youtubeBool = true;
             }
         if (fileDirectory.Text != "")
             {
                 count++;
+                fileBool = true;
             }
         if (txtInput.Text != "")
             {
                 count++;
+                txtBool = true;
             }
         if (count > 1)
             {
@@ -107,6 +115,22 @@ namespace Raisin
         else if (count < 1)
             {
                 errorMessage.Text = "Error: You must provide input";
+            }
+        else
+            {
+                errorMessage.Text = "";
+                if (youtubeBool == true)
+                {
+                    //backend function with captions txt
+                }
+                if (fileBool == true)
+                {
+                    //backend function with file txt
+                }
+                if (txtBool == true)
+                {
+                    //backend function with string
+                }
             }
 
         }
