@@ -17,17 +17,14 @@ namespace Raisin
          {
              Langpr = new LangProc();
              response = Langpr.AnalyzeSyntaxFromText(info);
-             for (int i = 0; i < response.CalculateSize(); i++)
+            
+             foreach(var token in response.Tokens)
              {
-                for (int j = 0; j < response.Sentences.Count(); j++)
-                {
-                    //if(response.Sentences[i].)
-                }
+                Console.Out.WriteLine(token.PartOfSpeech.Case);
+                                      
              }
-             /*foreach(var sentence in response.Sentences)
-             {
+             
 
-             }*/
          }
 
     }
