@@ -35,6 +35,7 @@
             this.enter = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -103,14 +104,23 @@
             this.textBox1.Location = new System.Drawing.Point(34, 271);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(341, 34);
+            this.textBox1.Size = new System.Drawing.Size(341, 39);
             this.textBox1.TabIndex = 6;
+            // 
+            // Error
+            // 
+            this.Error.AutoSize = true;
+            this.Error.Location = new System.Drawing.Point(34, 328);
+            this.Error.Name = "Error";
+            this.Error.Size = new System.Drawing.Size(0, 17);
+            this.Error.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 435);
+            this.Controls.Add(this.Error);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.enter);
@@ -136,6 +146,7 @@
         private System.Windows.Forms.Button enter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label Error;
     }
 }
 
