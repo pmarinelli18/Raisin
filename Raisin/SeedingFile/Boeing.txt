@@ -1,0 +1,25 @@
+﻿According to a letter FAA head Steve Dickson sent to Boeing on Friday, the plane maker discovered the messages in February of this year, several months after a Lion Air 737 MAX crashed in Indonesia and around a month before another of the jets operated by Ethiopian Airlines crashed, killing all on board. But Mr. Dickson’s letter said Boeing didn’t reveal their existence to the agency until this week and demanded the plane maker provide an immediate explanation for the delay.
+
+The messages suggest Boeing’s pilots may have encountered some of the problems that eventually led to the two crashes, which together claimed 346 lives. MCAS has been implicated in both crashes.
+
+David Gerger, an attorney for Mr. Forkner, said: “If you read the whole chat, it is obvious that there was no ‘lie’ and the simulator program was not operating properly. Based on what he was told, Mark thought the plane was safe, and the simulator would be fixed.”
+
+The messages, coupled with questions about why they weren’t shared earlier with the FAA or congressional investigators, intensify scrutiny on Boeing’s management and safety culture. They also raise the stakes for Boeing at an Oct. 30 hearing of the House Transportation and Infrastructure Committee.
+
+Rep. Peter DeFazio of Oregon, the Democratic chairman of the committee, has signaled that Boeing Chief Executive Dennis Muilenburg will be grilled about whether the company misled regulators about MCAS and then withheld relevant documents from investigators.
+
+Mr. DeFazio said the messages “show deliberate concealment” of a problematic system that was on the plane but not included in the training manual. “That’s just outrageous.”
+
+Late Friday, Mr DeFazio sent a letter to Transportation Secretary Elaine Chao saying he was “deeply troubled” by the documents he received, because they reflected “improper coziness between the regulator and regulated.”
+
+After months assessing the relative responsibility of federal regulators and the plane maker in creating the MAX crisis, Mr. DeFazio said now his probe’s focus “is shifting way over to the Boeing side.”
+
+“You can’t pin this on just this guy,” he said, adding that “this was a cultural problem.”
+
+The messages between Messrs. Forkner and Gustavsson, which were earlier reported by Reuters, highlight issues relating to Boeing’s efforts to get the MAX approved smoothly—as well as what pilots were told about MCAS—both topics that congressional investigators and federal prosecutors are focused on, according to people familiar with the probes.
+
+The pilots appeared to discuss Mr. Forkner’s role in Boeing’s crafting pilot MAX manuals, which excluded references to MCAS. After describing the feature “running rampant” in the flight simulator, Mr. Forkner wrote: “Oh great, that means we have to update the speed trim description” in those documents. Speed trim is another flight-control system related to MCAS.
+
+Investigators have been looking into whether such an update could have alerted FAA officials about the power of MCAS, or possibly prompted the agency to mandate additional simulator training for pilots on the new model. Boeing and airlines that bought the MAX, especially Southwest Airlines Co. , were determined to persuade the FAA that additional simulator training wasn’t required because MCAS was simply an offshoot of the long-standing speed-trim system previously approved by regulators.
+
+At the end of the exchange, when the aviators complain that Boeing test pilots failed to alert them about the issues, Mr. Forkner responded: “They’re all so damn busy, and getting pressure from the program.”
