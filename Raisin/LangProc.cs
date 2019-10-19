@@ -30,7 +30,7 @@ namespace Raisin
                 Type = Document.Types.Type.PlainText
             },
             new Features() { ExtractSyntax = true });
-
+            //WriteSentences(response.Sentences, response.Tokens);
             return response;
         }
 

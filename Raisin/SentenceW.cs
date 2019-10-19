@@ -13,10 +13,16 @@ namespace Raisin
     class SentenceW
     {
         Sentence _sentence;
+        float confidence;
+        bool hasSubject;
+        bool hasVerb;
+        bool isFact;
+
+        //AnnotateTextResponse response;
 
         SentenceW(LangProc _LangObj)
         {
-
+            //response = _LangObj.AnalyzeSyntaxFromText();
         }
     }
 }
