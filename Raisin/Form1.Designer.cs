@@ -71,7 +71,7 @@
             this.searchFile.TabIndex = 2;
             this.searchFile.Text = "Search For File";
             this.searchFile.UseVisualStyleBackColor = true;
-            this.searchFile.Click += new System.EventHandler(this.button1_Click);
+            this.searchFile.Click += new System.EventHandler(this.fileEnter);
             // 
             // enter
             // 
@@ -105,7 +105,7 @@
             // fileDirectory
             // 
             this.fileDirectory.AutoSize = true;
-            this.fileDirectory.Location = new System.Drawing.Point(471, 100);
+            this.fileDirectory.Location = new System.Drawing.Point(450, 96);
             this.fileDirectory.Name = "fileDirectory";
             this.fileDirectory.Size = new System.Drawing.Size(0, 17);
             this.fileDirectory.TabIndex = 7;

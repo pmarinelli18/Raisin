@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,18 +33,45 @@ namespace Raisin
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void fileEnter(object sender, EventArgs e)
         {
-            System.Windows.Forms.FolderBrowserDialog dlg = new System.Windows.Forms.FolderBrowserDialog();
-            // This is what will execute if the user selects a folder and hits OK (File if you change to FileBrowserDialog)
-            if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                string folder = dlg.SelectedPath;
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    //Read the contents of the file into a stream
+                    var fileStream = openFileDialog.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        fileContent = reader.ReadToEnd();
+                    }
+                }
+                // MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
+
+                fileDirectory.Text = filePath;
             }
-            else
-            {
-                // This prevents a crash when you close out of the window with nothing
-            }
+            /* System.Windows.Forms.FolderBrowserDialog dlg = new System.Windows.Forms.FolderBrowserDialog();
+             // This is what will execute if the user selects a folder and hits OK (File if you change to FileBrowserDialog)
+             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+             {
+                 string folder = dlg.SelectedPath;
+             }
+             else
+             {
+                 // This prevents a crash when you close out of the window with nothing
+             } */
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
