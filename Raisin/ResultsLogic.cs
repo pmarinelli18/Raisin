@@ -12,10 +12,12 @@ namespace Raisin
         LangProc Langpr;
 
          public ResultsLogic(String info)
-        {
-            Langpr = new LangProc();
-            Langpr.AnalyzeSyntaxFromText(info);
-        }
+         {
+             Langpr = new LangProc();
+             Langpr.AnalyzeSyntaxFromText(info);
+
+         }
+
     }
 
     
