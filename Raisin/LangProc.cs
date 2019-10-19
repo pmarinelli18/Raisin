@@ -3,35 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Language.V1;
+using Google.Protobuf.Collections;
+using static Google.Cloud.Language.V1.AnnotateTextRequest.Types;
 
 namespace Raisin
 {
     class LangProc
-    {
-        public LangProc(string _info)
-        {
-            info = _info;
-        }
-        string info;
-        //client langClient;
+    {      
+        LanguageServiceClient langClient;
 
-        /*private static void AnalyzeSyntaxFromText(string text)
+        public LangProc()
+        {     
+            
+        }
+        public void AnalyzeSyntaxFromText(string info)
         {
-            var client = LanguageServiceClient.Create();
-            var response = client.AnnotateText(new Document()
+            
+            var client = new LanguageServiceClientBuilder();
+            client.CredentialsPath = ("creds.json");
+
+            var clientt = client.Build();
+            
+
+
+            9var response = clientt.AnnotateText(new Document()
             {
-                Content = text,
+                Content = info,
                 Type = Document.Types.Type.PlainText
             },
             new Features() { ExtractSyntax = true });
             WriteSentences(response.Sentences, response.Tokens);
-        }*/
-    }
+        }
 
-    /*AnalysisSyntaxResponse getSyntax()
-    {
-        return langClient.AnalyzeSentiment(info);
-    }*/
+        public void WriteSentences(IEnumerable<Sentence> sentences,
+        RepeatedField<Token> tokens)
+        {
+            Console.WriteLine("Sentences:");
+            foreach (var sentence in sentences)
+            {
+                Console.WriteLine($"\t{sentence.Text.BeginOffset}: {sentence.Text.Content}");
+            }
+            Console.WriteLine("Tokens:");
+            foreach (var token in tokens)
+            {
+                Console.WriteLine($"\t{token.PartOfSpeech.Tag} "
+                    + $"{token.Text.Content}");
+            }
+        }
+    }     
 }
-//LanguageServiceClient client = LanguageServiceClient().Create();
+

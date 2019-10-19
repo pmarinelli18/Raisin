@@ -88,6 +88,7 @@
             this.enter.TabIndex = 4;
             this.enter.Text = "Enter";
             this.enter.UseVisualStyleBackColor = true;
+            this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
             // label3
             // 
