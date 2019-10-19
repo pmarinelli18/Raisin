@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.input = new System.Windows.Forms.TextBox();
+            this.txtPrompt = new System.Windows.Forms.Label();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.searchFile = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.enter = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Error = new System.Windows.Forms.Label();
+            this.youtubePrompt = new System.Windows.Forms.Label();
+            this.youtubeURL = new System.Windows.Forms.TextBox();
+            this.fileDirectory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // txtPrompt
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 29);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(293, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Input text to fact check or use Search For File";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.txtPrompt.AutoSize = true;
+            this.txtPrompt.Location = new System.Drawing.Point(31, 29);
+            this.txtPrompt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtPrompt.Name = "txtPrompt";
+            this.txtPrompt.Size = new System.Drawing.Size(293, 17);
+            this.txtPrompt.TabIndex = 0;
+            this.txtPrompt.Text = "Input text to fact check or use Search For File";
+            this.txtPrompt.Click += new System.EventHandler(this.label1_Click);
             // 
-            // input
+            // txtInput
             // 
-            this.input.Location = new System.Drawing.Point(34, 65);
-            this.input.Margin = new System.Windows.Forms.Padding(2);
-            this.input.Multiline = true;
-            this.input.Name = "input";
-            this.input.Size = new System.Drawing.Size(341, 137);
-            this.input.TabIndex = 1;
-            this.input.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtInput.Location = new System.Drawing.Point(34, 65);
+            this.txtInput.Margin = new System.Windows.Forms.Padding(2);
+            this.txtInput.Multiline = true;
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(341, 137);
+            this.txtInput.TabIndex = 1;
+            this.txtInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // searchFile
             // 
@@ -81,7 +81,7 @@
             // 
             // enter
             // 
-            this.enter.Location = new System.Drawing.Point(34, 362);
+            this.enter.Location = new System.Drawing.Point(34, 342);
             this.enter.Margin = new System.Windows.Forms.Padding(2);
             this.enter.Name = "enter";
             this.enter.Size = new System.Drawing.Size(110, 33);
@@ -90,45 +90,45 @@
             this.enter.UseVisualStyleBackColor = true;
             this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
-            // label3
+            // youtubePrompt
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 237);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Provide a Youtube link";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.youtubePrompt.AutoSize = true;
+            this.youtubePrompt.Location = new System.Drawing.Point(31, 224);
+            this.youtubePrompt.Name = "youtubePrompt";
+            this.youtubePrompt.Size = new System.Drawing.Size(150, 17);
+            this.youtubePrompt.TabIndex = 5;
+            this.youtubePrompt.Text = "Provide a Youtube link";
+            this.youtubePrompt.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // youtubeURL
             // 
-            this.textBox1.Location = new System.Drawing.Point(34, 271);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(341, 39);
-            this.textBox1.TabIndex = 6;
+            this.youtubeURL.Location = new System.Drawing.Point(34, 256);
+            this.youtubeURL.Multiline = true;
+            this.youtubeURL.Name = "youtubeURL";
+            this.youtubeURL.Size = new System.Drawing.Size(341, 39);
+            this.youtubeURL.TabIndex = 6;
             // 
-            // Error
+            // fileDirectory
             // 
-            this.Error.AutoSize = true;
-            this.Error.Location = new System.Drawing.Point(34, 328);
-            this.Error.Name = "Error";
-            this.Error.Size = new System.Drawing.Size(0, 17);
-            this.Error.TabIndex = 7;
+            this.fileDirectory.AutoSize = true;
+            this.fileDirectory.Location = new System.Drawing.Point(471, 100);
+            this.fileDirectory.Name = "fileDirectory";
+            this.fileDirectory.Size = new System.Drawing.Size(0, 17);
+            this.fileDirectory.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 435);
-            this.Controls.Add(this.Error);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(680, 397);
+            this.Controls.Add(this.fileDirectory);
+            this.Controls.Add(this.youtubeURL);
+            this.Controls.Add(this.youtubePrompt);
             this.Controls.Add(this.enter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.searchFile);
-            this.Controls.Add(this.input);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.txtPrompt);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Check Your Facts";
@@ -140,14 +140,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox input;
+        private System.Windows.Forms.Label txtPrompt;
+        private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button searchFile;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button enter;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Error;
+        private System.Windows.Forms.Label youtubePrompt;
+        private System.Windows.Forms.TextBox youtubeURL;
+        private System.Windows.Forms.Label fileDirectory;
     }
 }
 
