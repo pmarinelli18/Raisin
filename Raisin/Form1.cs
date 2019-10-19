@@ -58,7 +58,7 @@ namespace Raisin
 
         private void enter_Click(object sender, EventArgs e)
         {
-            ResultsLogic r = new ResultsLogic(input.Text);
+            ResultsLogic r = new ResultsLogic(txtInput);
             int count = 0;
         if (youtubeURL.Text != "")
             {
