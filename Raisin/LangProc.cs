@@ -24,11 +24,9 @@ namespace Raisin
             var client = new LanguageServiceClientBuilder();
             client.CredentialsPath = ("creds.json");
 
-            var clientt = client.Build();
+            var langClient = client.Build();
             
-
-
-            9var response = clientt.AnnotateText(new Document()
+            var response = langClient.AnnotateText(new Document()
             {
                 Content = info,
                 Type = Document.Types.Type.PlainText
