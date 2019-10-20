@@ -21,7 +21,7 @@ namespace Raisin
              {
                 for (int j = 0; j < response.Sentences.Count(); j++)
                 {
-                    if(response.Sentences[i].)
+                   // if(response.Sentences[i].)
                 }
              }
              /*foreach(var sentence in response.Sentences)
