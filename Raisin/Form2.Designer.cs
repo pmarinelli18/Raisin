@@ -68,7 +68,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox factsList;
+        public System.Windows.Forms.ListBox factsList;
         private System.Windows.Forms.Label label1;
     }
 }

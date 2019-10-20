@@ -133,6 +133,15 @@ namespace Raisin
             }
 
             ResultsLogic r = new ResultsLogic(txtInput.Text);
+
+            Form2 form2 = new Form2();
+            form2.Show();
+                                    
+            foreach (var item in r.rntFact())
+            {
+                form2.factsList.Items.Add(item.Text);
+            }
+
         }
     }
 }

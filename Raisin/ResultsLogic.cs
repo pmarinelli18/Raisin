@@ -22,6 +22,8 @@ namespace Raisin
             System.Console.WriteLine();
          }
 
+
+        
         public List<Sentence> rntFact()
         {
             List<Sentence> ws = new List<Sentence>();
