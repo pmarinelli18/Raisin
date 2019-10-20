@@ -21,6 +21,7 @@ namespace Raisin
             
             var client = new LanguageServiceClientBuilder();
             client.CredentialsPath = ("creds.json");
+            
 
             var langClient = client.Build();
             
@@ -29,8 +30,7 @@ namespace Raisin
                 Content = info,
                 Type = Document.Types.Type.PlainText
             },
-            new Features() { ExtractSyntax = true });
-            //WriteSentences(response.Sentences, response.Tokens);
+            new Features() { ExtractSyntax = true } );              
             return response;
         }
 
