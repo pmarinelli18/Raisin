@@ -39,7 +39,7 @@ namespace Raisin
                 for (int i = 0; i < response.Sentences.Count(); i++)
                 {   
                     if (response.Sentences[i].Text.BeginOffset  >= index
-                        && (i + 1 > response.Sentences.Count()) ||
+                        && (i + 1 >= response.Sentences.Count()) ||
                         (response.Sentences[i].Text.BeginOffset <= index 
                         && response.Sentences[i + 1].Text.BeginOffset >= index))
                         ws.Add(response.Sentences[i]);
