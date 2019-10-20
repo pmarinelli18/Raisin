@@ -11,13 +11,15 @@ namespace Raisin
 {
     class YouTubeConnector
     {
+        public string getSomething(string id)
+        {
+            string hi = "lkdjsf;l";
+            //DownloadRequest( "vtt" ,id);
+            return hi;
+        }
+        
         private
             string URL;
             string ID;
-
-        public string getURL(string url)
-        {
-            return "";
-        }
     }
 }

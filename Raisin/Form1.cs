@@ -121,6 +121,16 @@ namespace Raisin
                 if (youtubeBool == true)
                 {
                     //backend function with captions txt
+                    string URL = youtubeURL.Text; //23 Index = 
+                    if(URL[0] == 'h')
+                    {
+                        URL = URL.Substring(8);
+                    }
+
+                    string ID = URL.Substring(24);
+                    errorMessage.Text = ID;
+                    YouTubeConnector YT = new YouTubeConnector();
+                    YT.
                 }
                 if (fileBool == true)
                 {
