@@ -11,20 +11,13 @@ namespace Raisin
 {
     class YouTubeConnector
     {
+        private
+            string URL;
+            string ID;
+
         public string getURL(string url)
         {
             return "";
         }
-        /*private async Task Run()
-        {
-
-            //Uri uri = new Uri()
-            var youtubeService = new YouTubeService(new BaseClientService.Initializer()
-            {
-                ApiKey = "creds.json",
-                ApplicationName = this.GetType().ToString()
-            });
-            //video
-        }*/
     }
 }
