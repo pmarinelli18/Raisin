@@ -32,6 +32,7 @@ namespace Raisin
             {
                 if (item.PartOfSpeech.Mood == PartOfSpeech.Types.Mood.Indicative)
                 {
+                    new SearchFact(item.Text.Content);
                     vs.Add(item.Text.BeginOffset);
                 }
             }
