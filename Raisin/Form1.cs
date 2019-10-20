@@ -86,7 +86,6 @@ namespace Raisin
 
         private void enter_Click(object sender, EventArgs e)
         {
-            //ResultsLogic r = new ResultsLogic(txtInput.Text);
             int count = 0;
         if (youtubeURL.Text != "")
             {
@@ -109,6 +108,7 @@ namespace Raisin
                 errorMessage.Text = "Error: You must provide input";
             }
 
+            ResultsLogic r = new ResultsLogic(txtInput.Text);
         }
     }
 }
