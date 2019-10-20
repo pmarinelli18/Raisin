@@ -112,6 +112,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultsLogic.cs" />
+    <Compile Include="SearchFact.cs" />
     <Compile Include="SentenceW.cs" />
     <Compile Include="YouTubeConnector.cs" />
     <EmbeddedResource Include="Form1.resx">

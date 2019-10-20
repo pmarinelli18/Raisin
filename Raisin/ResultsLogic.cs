@@ -40,11 +40,10 @@ namespace Raisin
                 {   
                     if ((response.Sentences[i].Text.BeginOffset  <= index
                         && ((i + 1) >= response.Sentences.Count())) ||
-                        (response.Sentences[i].Text.BeginOffset <= index 
+                        (response.Sentences[i].Text.BeginOffset <= index                          
                         && response.Sentences[i + 1].Text.BeginOffset >= index))
-                        ws.Add(response.Sentences[i]);
-                    
-                }
+                        ws.Add(response.Sentences[i]);  
+                }                                     
             }
             
             return ws;
